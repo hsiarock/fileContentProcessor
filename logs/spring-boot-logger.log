@@ -1,0 +1,903 @@
+2021-02-07 12:04:37,287 INFO org.springframework.boot.StartupInfoLogger [main] Starting CheckStyleFindBugsApplicationTests using Java 11.0.9.1 on DESKTOP-3D44SE3 with PID 6564 (started by Z420 in E:\workspace_spring_maven\springIntegration_filewatch)
+2021-02-07 12:04:37,302 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-02-07 12:04:38,412 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2021-02-07 12:04:38,412 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2021-02-07 12:04:38,427 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2021-02-07 12:04:38,693 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 12:04:38,818 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 12:04:38,880 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 12:04:39,255 INFO com.example.demo.services.FileWriteConfig [main] adaptor setup
+2021-02-07 12:04:40,224 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-07 12:04:40,927 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2021-02-07 12:04:41,068 INFO org.springframework.core.log.LogAccessor [main] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-02-07 12:04:41,068 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.errorChannel' has 1 subscriber(s).
+2021-02-07 12:04:41,068 INFO org.springframework.core.log.LogAccessor [main] started bean '_org.springframework.integration.errorLogger'
+2021-02-07 12:04:41,068 INFO org.springframework.core.log.LogAccessor [main] Adding {file:outbound-channel-adapter:fileWriteConfig.fileWritingMessageHandler.serviceActivator} as a subscriber to the 'fileChannel' channel
+2021-02-07 12:04:41,068 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.fileChannel' has 1 subscriber(s).
+2021-02-07 12:04:41,068 INFO org.springframework.core.log.LogAccessor [main] started bean 'fileWriteConfig.fileWritingMessageHandler.serviceActivator'
+2021-02-07 12:04:41,068 INFO org.springframework.core.log.LogAccessor [main] started bean 'fileWriteConfig.fileReadingMessageSource.inboundChannelAdapter'
+2021-02-07 12:04:41,083 INFO org.springframework.boot.StartupInfoLogger [main] Started CheckStyleFindBugsApplicationTests in 4.482 seconds (JVM running for 6.415)
+2021-02-07 12:04:41,677 INFO org.springframework.core.log.LogAccessor [SpringContextShutdownHook] stopped bean 'fileWriteConfig.fileReadingMessageSource.inboundChannelAdapter'
+2021-02-07 12:04:41,677 INFO org.springframework.core.log.LogAccessor [SpringContextShutdownHook] Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-02-07 12:04:41,677 INFO org.springframework.core.log.LogAccessor [SpringContextShutdownHook] Channel 'application.errorChannel' has 0 subscriber(s).
+2021-02-07 12:04:41,677 INFO org.springframework.core.log.LogAccessor [SpringContextShutdownHook] stopped bean '_org.springframework.integration.errorLogger'
+2021-02-07 12:04:41,677 INFO org.springframework.core.log.LogAccessor [SpringContextShutdownHook] Removing {file:outbound-channel-adapter:fileWriteConfig.fileWritingMessageHandler.serviceActivator} as a subscriber to the 'fileChannel' channel
+2021-02-07 12:04:41,677 INFO org.springframework.core.log.LogAccessor [SpringContextShutdownHook] Channel 'application.fileChannel' has 0 subscriber(s).
+2021-02-07 12:04:41,677 INFO org.springframework.core.log.LogAccessor [SpringContextShutdownHook] stopped bean 'fileWriteConfig.fileWritingMessageHandler.serviceActivator'
+2021-02-07 12:04:41,677 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'taskScheduler'
+2021-02-07 12:04:41,693 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-07 12:30:17,585 INFO org.springframework.boot.StartupInfoLogger [main] Starting CheckStyleFindBugsApplication using Java 11.0.9.1 on DESKTOP-3D44SE3 with PID 4852 (E:\workspace_spring_maven\springIntegration_filewatch\target\classes started by Z420 in E:\workspace_spring_maven\springIntegration_filewatch)
+2021-02-07 12:30:17,600 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-02-07 12:30:18,475 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2021-02-07 12:30:18,475 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2021-02-07 12:30:18,475 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2021-02-07 12:30:18,694 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 12:30:18,694 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 12:30:18,710 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 12:30:19,256 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-02-07 12:30:19,272 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-07 12:30:19,272 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-02-07 12:30:19,288 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-07 12:30:19,413 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-02-07 12:30:19,413 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1750 ms
+2021-02-07 12:30:19,631 INFO com.example.demo.services.FileWriteConfig [main] adaptor setup
+2021-02-07 12:30:19,663 INFO com.example.demo.services.FileWriteConfig [main] Complete write to dest-dir: C:/tmp/dest
+2021-02-07 12:30:19,663 INFO com.example.demo.services.FileWriteConfig [main] delete file from source_dir: C:/tmp/source
+2021-02-07 12:30:20,038 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-07 12:30:20,397 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2021-02-07 12:30:20,459 INFO org.springframework.core.log.LogAccessor [main] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-02-07 12:30:20,459 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.errorChannel' has 1 subscriber(s).
+2021-02-07 12:30:20,459 INFO org.springframework.core.log.LogAccessor [main] started bean '_org.springframework.integration.errorLogger'
+2021-02-07 12:30:20,459 INFO org.springframework.core.log.LogAccessor [main] Adding {file:outbound-channel-adapter:fileWriteConfig.fileWritingMessageHandler.serviceActivator} as a subscriber to the 'fileChannel' channel
+2021-02-07 12:30:20,459 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.fileChannel' has 1 subscriber(s).
+2021-02-07 12:30:20,459 INFO org.springframework.core.log.LogAccessor [main] started bean 'fileWriteConfig.fileWritingMessageHandler.serviceActivator'
+2021-02-07 12:30:20,459 INFO org.springframework.core.log.LogAccessor [main] started bean 'fileWriteConfig.fileReadingMessageSource.inboundChannelAdapter'
+2021-02-07 12:30:20,475 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-07 12:30:20,491 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-07 12:30:20,506 INFO org.springframework.boot.StartupInfoLogger [main] Started CheckStyleFindBugsApplication in 3.648 seconds (JVM running for 4.45)
+2021-02-07 12:30:56,911 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-07 12:30:56,911 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-02-07 12:30:56,911 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2021-02-07 12:39:58,576 INFO org.springframework.boot.StartupInfoLogger [main] Starting CheckStyleFindBugsApplicationTests using Java 11.0.9.1 on DESKTOP-3D44SE3 with PID 8004 (started by Z420 in E:\workspace_spring_maven\springIntegration_filewatch)
+2021-02-07 12:39:58,581 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-02-07 12:39:59,899 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2021-02-07 12:39:59,915 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2021-02-07 12:39:59,915 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2021-02-07 12:40:00,102 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 12:40:00,118 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 12:40:00,149 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 12:40:00,431 INFO com.example.demo.services.FileWriteConfig [main] adaptor setup
+2021-02-07 12:40:00,477 INFO com.example.demo.services.FileWriteConfig [main] Complete write to dest-dir: C:/tmp/dest
+2021-02-07 12:40:00,477 INFO com.example.demo.services.FileWriteConfig [main] delete file from source_dir: C:/tmp/source
+2021-02-07 12:40:01,493 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-07 12:40:02,384 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-02-07 12:40:02,571 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2021-02-07 12:40:02,712 INFO org.springframework.core.log.LogAccessor [main] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-02-07 12:40:02,712 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.errorChannel' has 1 subscriber(s).
+2021-02-07 12:40:02,712 INFO org.springframework.core.log.LogAccessor [main] started bean '_org.springframework.integration.errorLogger'
+2021-02-07 12:40:02,712 INFO org.springframework.core.log.LogAccessor [main] Adding {file:outbound-channel-adapter:fileWriteConfig.fileWritingMessageHandler.serviceActivator} as a subscriber to the 'fileChannel' channel
+2021-02-07 12:40:02,712 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.fileChannel' has 1 subscriber(s).
+2021-02-07 12:40:02,712 INFO org.springframework.core.log.LogAccessor [main] started bean 'fileWriteConfig.fileWritingMessageHandler.serviceActivator'
+2021-02-07 12:40:02,712 INFO org.springframework.core.log.LogAccessor [main] started bean 'fileWriteConfig.fileReadingMessageSource.inboundChannelAdapter'
+2021-02-07 12:40:02,743 INFO org.springframework.boot.StartupInfoLogger [main] Started CheckStyleFindBugsApplicationTests in 4.768 seconds (JVM running for 6.483)
+2021-02-07 12:40:03,368 INFO org.springframework.core.log.LogAccessor [SpringContextShutdownHook] stopped bean 'fileWriteConfig.fileReadingMessageSource.inboundChannelAdapter'
+2021-02-07 12:40:03,384 INFO org.springframework.core.log.LogAccessor [SpringContextShutdownHook] Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-02-07 12:40:03,384 INFO org.springframework.core.log.LogAccessor [SpringContextShutdownHook] Channel 'application.errorChannel' has 0 subscriber(s).
+2021-02-07 12:40:03,384 INFO org.springframework.core.log.LogAccessor [SpringContextShutdownHook] stopped bean '_org.springframework.integration.errorLogger'
+2021-02-07 12:40:03,384 INFO org.springframework.core.log.LogAccessor [SpringContextShutdownHook] Removing {file:outbound-channel-adapter:fileWriteConfig.fileWritingMessageHandler.serviceActivator} as a subscriber to the 'fileChannel' channel
+2021-02-07 12:40:03,384 INFO org.springframework.core.log.LogAccessor [SpringContextShutdownHook] Channel 'application.fileChannel' has 0 subscriber(s).
+2021-02-07 12:40:03,384 INFO org.springframework.core.log.LogAccessor [SpringContextShutdownHook] stopped bean 'fileWriteConfig.fileWritingMessageHandler.serviceActivator'
+2021-02-07 12:40:03,384 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'taskScheduler'
+2021-02-07 12:40:03,384 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-07 12:41:26,015 INFO org.springframework.boot.StartupInfoLogger [main] Starting CheckStyleFindBugsApplication using Java 11.0.9.1 on DESKTOP-3D44SE3 with PID 5900 (E:\workspace_spring_maven\springIntegration_filewatch\target\classes started by Z420 in E:\workspace_spring_maven\springIntegration_filewatch)
+2021-02-07 12:41:26,020 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-02-07 12:41:27,172 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2021-02-07 12:41:27,179 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2021-02-07 12:41:27,182 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2021-02-07 12:41:27,370 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 12:41:27,374 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 12:41:27,396 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 12:41:27,901 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-02-07 12:41:27,921 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-07 12:41:27,921 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-02-07 12:41:27,921 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-07 12:41:28,060 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-02-07 12:41:28,062 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1981 ms
+2021-02-07 12:41:28,423 INFO com.example.demo.services.FileWriteConfig [main] adaptor setup
+2021-02-07 12:41:28,445 INFO com.example.demo.services.FileWriteConfig [main] Complete write to dest-dir: C:/tmp/dest
+2021-02-07 12:41:28,445 INFO com.example.demo.services.FileWriteConfig [main] delete file from source_dir: C:/tmp/source
+2021-02-07 12:41:28,816 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-07 12:41:29,310 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-02-07 12:41:29,393 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2021-02-07 12:41:29,493 INFO org.springframework.core.log.LogAccessor [main] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-02-07 12:41:29,493 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.errorChannel' has 1 subscriber(s).
+2021-02-07 12:41:29,493 INFO org.springframework.core.log.LogAccessor [main] started bean '_org.springframework.integration.errorLogger'
+2021-02-07 12:41:29,493 INFO org.springframework.core.log.LogAccessor [main] Adding {file:outbound-channel-adapter:fileWriteConfig.fileWritingMessageHandler.serviceActivator} as a subscriber to the 'fileChannel' channel
+2021-02-07 12:41:29,493 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.fileChannel' has 1 subscriber(s).
+2021-02-07 12:41:29,493 INFO org.springframework.core.log.LogAccessor [main] started bean 'fileWriteConfig.fileWritingMessageHandler.serviceActivator'
+2021-02-07 12:41:29,502 INFO org.springframework.core.log.LogAccessor [main] started bean 'fileWriteConfig.fileReadingMessageSource.inboundChannelAdapter'
+2021-02-07 12:41:29,504 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-07 12:41:29,534 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-07 12:41:29,564 INFO org.springframework.boot.StartupInfoLogger [main] Started CheckStyleFindBugsApplication in 4.259 seconds (JVM running for 4.924)
+2021-02-07 12:41:58,082 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-07 12:41:58,082 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-02-07 12:41:58,082 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2021-02-07 13:18:46,186 INFO org.springframework.boot.StartupInfoLogger [main] Starting CheckStyleFindBugsApplicationTests using Java 11.0.9.1 on DESKTOP-3D44SE3 with PID 4188 (started by Z420 in E:\workspace_spring_maven\springIntegration_filewatch)
+2021-02-07 13:18:46,201 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-02-07 13:18:47,576 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2021-02-07 13:18:47,608 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2021-02-07 13:18:47,608 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2021-02-07 13:18:47,858 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 13:18:47,858 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 13:18:47,904 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 13:18:48,529 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 0 (http)
+2021-02-07 13:18:48,545 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-auto-1"]
+2021-02-07 13:18:48,545 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-02-07 13:18:48,545 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-07 13:18:48,748 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-02-07 13:18:48,748 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2515 ms
+2021-02-07 13:18:49,389 INFO com.example.demo.services.FileWriteConfig [main] adaptor setup
+2021-02-07 13:18:49,451 INFO com.example.demo.services.FileWriteConfig [main] Complete write to dest-dir: C:/tmp/dest
+2021-02-07 13:18:49,451 INFO com.example.demo.services.FileWriteConfig [main] delete file from source_dir: C:/tmp/source
+2021-02-07 13:18:49,951 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-07 13:18:50,967 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2021-02-07 13:18:51,107 INFO org.springframework.core.log.LogAccessor [main] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-02-07 13:18:51,107 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.errorChannel' has 1 subscriber(s).
+2021-02-07 13:18:51,107 INFO org.springframework.core.log.LogAccessor [main] started bean '_org.springframework.integration.errorLogger'
+2021-02-07 13:18:51,107 INFO org.springframework.core.log.LogAccessor [main] Adding {file:outbound-channel-adapter:fileWriteConfig.fileWritingMessageHandler.serviceActivator} as a subscriber to the 'fileChannel' channel
+2021-02-07 13:18:51,107 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.fileChannel' has 1 subscriber(s).
+2021-02-07 13:18:51,107 INFO org.springframework.core.log.LogAccessor [main] started bean 'fileWriteConfig.fileWritingMessageHandler.serviceActivator'
+2021-02-07 13:18:51,123 INFO org.springframework.core.log.LogAccessor [main] started bean 'fileWriteConfig.fileReadingMessageSource.inboundChannelAdapter'
+2021-02-07 13:18:51,123 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-auto-1"]
+2021-02-07 13:18:51,154 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 56658 (http) with context path ''
+2021-02-07 13:18:51,295 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 0 (http)
+2021-02-07 13:18:51,295 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-127.0.0.1-auto-2"]
+2021-02-07 13:18:51,295 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-02-07 13:18:51,295 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-07 13:18:51,342 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-02-07 13:18:51,342 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 172 ms
+2021-02-07 13:18:51,373 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-02-07 13:18:51,420 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-127.0.0.1-auto-2"]
+2021-02-07 13:18:51,420 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 56663 (http) with context path ''
+2021-02-07 13:18:51,451 INFO org.springframework.boot.StartupInfoLogger [main] Started CheckStyleFindBugsApplicationTests in 5.911 seconds (JVM running for 7.604)
+2021-02-07 13:18:52,154 INFO org.apache.juli.logging.DirectJDKLog [http-nio-127.0.0.1-auto-2-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-07 13:18:52,154 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-127.0.0.1-auto-2-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-02-07 13:18:52,154 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-127.0.0.1-auto-2-exec-1] Completed initialization in 0 ms
+2021-02-07 13:18:52,357 INFO org.apache.juli.logging.DirectJDKLog [http-nio-auto-1-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-07 13:18:52,357 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-auto-1-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-02-07 13:18:52,357 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-auto-1-exec-1] Completed initialization in 0 ms
+2021-02-07 13:18:52,571 INFO org.springframework.core.log.LogAccessor [SpringContextShutdownHook] stopped bean 'fileWriteConfig.fileReadingMessageSource.inboundChannelAdapter'
+2021-02-07 13:18:52,571 INFO org.springframework.core.log.LogAccessor [SpringContextShutdownHook] Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-02-07 13:18:52,571 INFO org.springframework.core.log.LogAccessor [SpringContextShutdownHook] Channel 'application.errorChannel' has 0 subscriber(s).
+2021-02-07 13:18:52,571 INFO org.springframework.core.log.LogAccessor [SpringContextShutdownHook] stopped bean '_org.springframework.integration.errorLogger'
+2021-02-07 13:18:52,571 INFO org.springframework.core.log.LogAccessor [SpringContextShutdownHook] Removing {file:outbound-channel-adapter:fileWriteConfig.fileWritingMessageHandler.serviceActivator} as a subscriber to the 'fileChannel' channel
+2021-02-07 13:18:52,571 INFO org.springframework.core.log.LogAccessor [SpringContextShutdownHook] Channel 'application.fileChannel' has 0 subscriber(s).
+2021-02-07 13:18:52,571 INFO org.springframework.core.log.LogAccessor [SpringContextShutdownHook] stopped bean 'fileWriteConfig.fileWritingMessageHandler.serviceActivator'
+2021-02-07 13:18:52,571 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'taskScheduler'
+2021-02-07 13:18:52,587 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-07 13:19:22,168 INFO org.springframework.boot.StartupInfoLogger [main] Starting CheckStyleFindBugsApplication using Java 11.0.9.1 on DESKTOP-3D44SE3 with PID 11104 (E:\workspace_spring_maven\springIntegration_filewatch\target\classes started by Z420 in E:\workspace_spring_maven\springIntegration_filewatch)
+2021-02-07 13:19:22,184 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-02-07 13:19:23,309 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2021-02-07 13:19:23,324 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2021-02-07 13:19:23,324 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2021-02-07 13:19:23,527 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 13:19:23,543 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 13:19:23,574 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 13:19:24,090 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9000 (http)
+2021-02-07 13:19:24,121 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9000"]
+2021-02-07 13:19:24,121 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-02-07 13:19:24,121 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-07 13:19:24,246 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-02-07 13:19:24,246 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2000 ms
+2021-02-07 13:19:24,621 INFO com.example.demo.services.FileWriteConfig [main] adaptor setup
+2021-02-07 13:19:24,652 INFO com.example.demo.services.FileWriteConfig [main] Complete write to dest-dir: C:/tmp/dest
+2021-02-07 13:19:24,652 INFO com.example.demo.services.FileWriteConfig [main] delete file from source_dir: C:/tmp/source
+2021-02-07 13:19:25,059 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-07 13:19:25,637 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2021-02-07 13:19:25,730 INFO org.springframework.core.log.LogAccessor [main] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-02-07 13:19:25,730 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.errorChannel' has 1 subscriber(s).
+2021-02-07 13:19:25,730 INFO org.springframework.core.log.LogAccessor [main] started bean '_org.springframework.integration.errorLogger'
+2021-02-07 13:19:25,730 INFO org.springframework.core.log.LogAccessor [main] Adding {file:outbound-channel-adapter:fileWriteConfig.fileWritingMessageHandler.serviceActivator} as a subscriber to the 'fileChannel' channel
+2021-02-07 13:19:25,730 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.fileChannel' has 1 subscriber(s).
+2021-02-07 13:19:25,730 INFO org.springframework.core.log.LogAccessor [main] started bean 'fileWriteConfig.fileWritingMessageHandler.serviceActivator'
+2021-02-07 13:19:25,730 INFO org.springframework.core.log.LogAccessor [main] started bean 'fileWriteConfig.fileReadingMessageSource.inboundChannelAdapter'
+2021-02-07 13:19:25,730 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9000"]
+2021-02-07 13:19:25,762 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 9000 (http) with context path ''
+2021-02-07 13:19:25,887 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9001 (http)
+2021-02-07 13:19:25,887 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-127.0.0.1-9001"]
+2021-02-07 13:19:25,887 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-02-07 13:19:25,887 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-07 13:19:25,918 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-02-07 13:19:25,918 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 141 ms
+2021-02-07 13:19:25,949 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-02-07 13:19:26,012 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-127.0.0.1-9001"]
+2021-02-07 13:19:26,012 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 9001 (http) with context path ''
+2021-02-07 13:19:26,027 INFO org.springframework.boot.StartupInfoLogger [main] Started CheckStyleFindBugsApplication in 4.555 seconds (JVM running for 5.156)
+2021-02-07 13:20:04,455 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9000-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-07 13:20:04,455 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9000-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-02-07 13:20:04,455 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9000-exec-1] Completed initialization in 0 ms
+2021-02-07 13:23:32,496 INFO org.apache.juli.logging.DirectJDKLog [http-nio-127.0.0.1-9001-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-07 13:23:32,496 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-127.0.0.1-9001-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-02-07 13:23:32,496 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-127.0.0.1-9001-exec-1] Completed initialization in 0 ms
+2021-02-07 13:25:11,190 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9000-exec-5] Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x030x890x810xb9]0x97+0x890xf10xfdY"0xa00x9c0x1cU0x1e0x07RRBh0x140x920x1b0x94^0xd9E0xbc0xde9K]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:417)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:261)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-02-07 13:25:11,190 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9000-exec-6] Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x030xde0xc80x100xdc0xcb?0xb9Ihl)k0xf60xc3<0xf3~jN0x170x91^0xb20xeb`0xdb0x080xe6-0xbf0xbc{]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:417)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:261)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-02-07 14:55:33,032 INFO org.springframework.boot.StartupInfoLogger [main] Starting CheckStyleFindBugsApplication using Java 11.0.9.1 on DESKTOP-3D44SE3 with PID 12580 (E:\workspace_spring_maven\springIntegration_filewatch\target\classes started by Z420 in E:\workspace_spring_maven\springIntegration_filewatch)
+2021-02-07 14:55:33,037 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-02-07 14:55:34,172 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2021-02-07 14:55:34,179 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2021-02-07 14:55:34,182 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2021-02-07 14:55:34,363 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 14:55:34,369 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 14:55:34,398 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 14:55:34,919 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9000 (http)
+2021-02-07 14:55:34,937 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9000"]
+2021-02-07 14:55:34,938 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-02-07 14:55:34,938 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-07 14:55:35,072 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-02-07 14:55:35,073 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1971 ms
+2021-02-07 14:55:35,385 INFO com.example.demo.services.FileWriteConfig [main] adaptor setup
+2021-02-07 14:55:35,418 INFO com.example.demo.services.FileWriteConfig [main] Complete write to dest-dir: C:/tmp/dest
+2021-02-07 14:55:35,419 INFO com.example.demo.services.FileWriteConfig [main] delete file from source_dir: C:/tmp/source
+2021-02-07 14:55:35,799 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-07 14:55:36,392 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2021-02-07 14:55:36,486 INFO org.springframework.core.log.LogAccessor [main] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-02-07 14:55:36,486 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.errorChannel' has 1 subscriber(s).
+2021-02-07 14:55:36,487 INFO org.springframework.core.log.LogAccessor [main] started bean '_org.springframework.integration.errorLogger'
+2021-02-07 14:55:36,487 INFO org.springframework.core.log.LogAccessor [main] Adding {file:outbound-channel-adapter:fileWriteConfig.fileWritingMessageHandler.serviceActivator} as a subscriber to the 'fileChannel' channel
+2021-02-07 14:55:36,487 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.fileChannel' has 1 subscriber(s).
+2021-02-07 14:55:36,487 INFO org.springframework.core.log.LogAccessor [main] started bean 'fileWriteConfig.fileWritingMessageHandler.serviceActivator'
+2021-02-07 14:55:36,491 INFO org.springframework.core.log.LogAccessor [main] started bean 'fileWriteConfig.fileReadingMessageSource.inboundChannelAdapter'
+2021-02-07 14:55:36,492 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9000"]
+2021-02-07 14:55:36,524 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 9000 (http) with context path ''
+2021-02-07 14:55:36,648 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9001 (http)
+2021-02-07 14:55:36,650 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-127.0.0.1-9001"]
+2021-02-07 14:55:36,651 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-02-07 14:55:36,651 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-07 14:55:36,686 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-02-07 14:55:36,687 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 155 ms
+2021-02-07 14:55:36,707 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-02-07 14:55:36,770 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-127.0.0.1-9001"]
+2021-02-07 14:55:36,775 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 9001 (http) with context path ''
+2021-02-07 14:55:36,800 INFO org.springframework.boot.StartupInfoLogger [main] Started CheckStyleFindBugsApplication in 4.486 seconds (JVM running for 5.226)
+2021-02-07 14:56:19,009 INFO org.apache.juli.logging.DirectJDKLog [http-nio-127.0.0.1-9001-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-07 14:56:19,011 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-127.0.0.1-9001-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-02-07 14:56:19,012 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-127.0.0.1-9001-exec-1] Completed initialization in 1 ms
+2021-02-07 14:59:36,942 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-127.0.0.1-9001-exec-7] No mapping for GET /checkstatus
+2021-02-07 14:59:37,206 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-127.0.0.1-9001-exec-8] No mapping for GET /favicon.ico
+2021-02-07 15:00:05,524 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-127.0.0.1-9001-exec-1] No mapping for GET /actuator/metrics
+2021-02-07 15:04:59,282 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-127.0.0.1-9001-exec-6] No mapping for GET /actuator/auditevents
+2021-02-07 15:05:25,015 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-127.0.0.1-9001-exec-7] No mapping for GET /actuator/beans
+2021-02-07 15:05:41,309 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-127.0.0.1-9001-exec-8] No mapping for GET /beans
+2021-02-07 15:19:22,355 INFO org.springframework.boot.StartupInfoLogger [main] Starting CheckStyleFindBugsApplication using Java 11.0.9.1 on DESKTOP-3D44SE3 with PID 12264 (E:\workspace_spring_maven\springIntegration_filewatch\target\classes started by Z420 in E:\workspace_spring_maven\springIntegration_filewatch)
+2021-02-07 15:19:22,355 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-02-07 15:19:23,506 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2021-02-07 15:19:23,513 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2021-02-07 15:19:23,517 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2021-02-07 15:19:23,700 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 15:19:23,705 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 15:19:23,739 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 15:19:24,151 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9000 (http)
+2021-02-07 15:19:24,167 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9000"]
+2021-02-07 15:19:24,167 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-02-07 15:19:24,167 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-07 15:19:24,292 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-02-07 15:19:24,292 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1843 ms
+2021-02-07 15:19:24,600 INFO com.example.demo.services.FileWriteConfig [main] adaptor setup
+2021-02-07 15:19:24,631 INFO com.example.demo.services.FileWriteConfig [main] Complete write to dest-dir: C:/tmp/dest
+2021-02-07 15:19:24,631 INFO com.example.demo.services.FileWriteConfig [main] delete file from source_dir: C:/tmp/source
+2021-02-07 15:19:25,014 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-07 15:19:25,605 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2021-02-07 15:19:25,698 INFO org.springframework.core.log.LogAccessor [main] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-02-07 15:19:25,699 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.errorChannel' has 1 subscriber(s).
+2021-02-07 15:19:25,700 INFO org.springframework.core.log.LogAccessor [main] started bean '_org.springframework.integration.errorLogger'
+2021-02-07 15:19:25,700 INFO org.springframework.core.log.LogAccessor [main] Adding {file:outbound-channel-adapter:fileWriteConfig.fileWritingMessageHandler.serviceActivator} as a subscriber to the 'fileChannel' channel
+2021-02-07 15:19:25,700 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.fileChannel' has 1 subscriber(s).
+2021-02-07 15:19:25,701 INFO org.springframework.core.log.LogAccessor [main] started bean 'fileWriteConfig.fileWritingMessageHandler.serviceActivator'
+2021-02-07 15:19:25,705 INFO org.springframework.core.log.LogAccessor [main] started bean 'fileWriteConfig.fileReadingMessageSource.inboundChannelAdapter'
+2021-02-07 15:19:25,706 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9000"]
+2021-02-07 15:19:25,737 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 9000 (http) with context path ''
+2021-02-07 15:19:25,850 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9001 (http)
+2021-02-07 15:19:25,851 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9001"]
+2021-02-07 15:19:25,852 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-02-07 15:19:25,853 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-07 15:19:25,887 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-02-07 15:19:25,887 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 144 ms
+2021-02-07 15:19:25,902 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-02-07 15:19:25,965 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9001"]
+2021-02-07 15:19:25,965 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 9001 (http) with context path ''
+2021-02-07 15:19:25,996 INFO org.springframework.boot.StartupInfoLogger [main] Started CheckStyleFindBugsApplication in 4.513 seconds (JVM running for 5.264)
+2021-02-07 15:19:33,401 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9001-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-07 15:19:33,403 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9001-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-02-07 15:19:33,403 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9001-exec-1] Completed initialization in 0 ms
+2021-02-07 15:19:33,733 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-2] No mapping for GET /favicon.ico
+2021-02-07 15:19:53,230 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-5] No mapping for GET /actuator/env
+2021-02-07 15:20:13,128 INFO org.springframework.boot.StartupInfoLogger [main] Starting CheckStyleFindBugsApplication using Java 11.0.9.1 on DESKTOP-3D44SE3 with PID 4804 (E:\workspace_spring_maven\springIntegration_filewatch\target\classes started by Z420 in E:\workspace_spring_maven\springIntegration_filewatch)
+2021-02-07 15:20:13,132 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-02-07 15:20:14,242 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2021-02-07 15:20:14,258 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2021-02-07 15:20:14,258 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2021-02-07 15:20:14,446 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 15:20:14,446 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 15:20:14,477 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 15:20:14,897 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9000 (http)
+2021-02-07 15:20:14,913 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9000"]
+2021-02-07 15:20:14,913 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-02-07 15:20:14,914 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-07 15:20:15,026 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-02-07 15:20:15,027 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1832 ms
+2021-02-07 15:20:15,327 INFO com.example.demo.services.FileWriteConfig [main] adaptor setup
+2021-02-07 15:20:15,354 INFO com.example.demo.services.FileWriteConfig [main] Complete write to dest-dir: C:/tmp/dest
+2021-02-07 15:20:15,354 INFO com.example.demo.services.FileWriteConfig [main] delete file from source_dir: C:/tmp/source
+2021-02-07 15:20:15,726 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-07 15:20:16,274 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2021-02-07 15:20:16,383 INFO org.springframework.core.log.LogAccessor [main] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-02-07 15:20:16,383 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.errorChannel' has 1 subscriber(s).
+2021-02-07 15:20:16,383 INFO org.springframework.core.log.LogAccessor [main] started bean '_org.springframework.integration.errorLogger'
+2021-02-07 15:20:16,383 INFO org.springframework.core.log.LogAccessor [main] Adding {file:outbound-channel-adapter:fileWriteConfig.fileWritingMessageHandler.serviceActivator} as a subscriber to the 'fileChannel' channel
+2021-02-07 15:20:16,383 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.fileChannel' has 1 subscriber(s).
+2021-02-07 15:20:16,383 INFO org.springframework.core.log.LogAccessor [main] started bean 'fileWriteConfig.fileWritingMessageHandler.serviceActivator'
+2021-02-07 15:20:16,383 INFO org.springframework.core.log.LogAccessor [main] started bean 'fileWriteConfig.fileReadingMessageSource.inboundChannelAdapter'
+2021-02-07 15:20:16,383 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9000"]
+2021-02-07 15:20:16,414 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 9000 (http) with context path ''
+2021-02-07 15:20:16,539 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9001 (http)
+2021-02-07 15:20:16,539 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-127.0.0.1-9001"]
+2021-02-07 15:20:16,539 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-02-07 15:20:16,539 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-07 15:20:16,586 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-02-07 15:20:16,586 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 156 ms
+2021-02-07 15:20:16,617 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-02-07 15:20:16,664 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-127.0.0.1-9001"]
+2021-02-07 15:20:16,664 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 9001 (http) with context path ''
+2021-02-07 15:20:16,695 INFO org.springframework.boot.StartupInfoLogger [main] Started CheckStyleFindBugsApplication in 4.379 seconds (JVM running for 5.109)
+2021-02-07 15:22:13,417 INFO org.springframework.boot.StartupInfoLogger [main] Starting CheckStyleFindBugsApplication using Java 11.0.9.1 on DESKTOP-3D44SE3 with PID 5608 (E:\workspace_spring_maven\springIntegration_filewatch\target\classes started by Z420 in E:\workspace_spring_maven\springIntegration_filewatch)
+2021-02-07 15:22:13,417 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-02-07 15:22:14,573 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2021-02-07 15:22:14,588 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2021-02-07 15:22:14,588 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2021-02-07 15:22:14,776 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 15:22:14,776 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 15:22:14,792 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 15:22:15,229 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9000 (http)
+2021-02-07 15:22:15,245 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9000"]
+2021-02-07 15:22:15,245 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-02-07 15:22:15,245 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-07 15:22:15,354 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-02-07 15:22:15,354 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1844 ms
+2021-02-07 15:22:15,659 INFO com.example.demo.services.FileWriteConfig [main] adaptor setup
+2021-02-07 15:22:15,690 INFO com.example.demo.services.FileWriteConfig [main] Complete write to dest-dir: C:/tmp/dest
+2021-02-07 15:22:15,690 INFO com.example.demo.services.FileWriteConfig [main] delete file from source_dir: C:/tmp/source
+2021-02-07 15:22:16,084 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-07 15:22:16,659 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2021-02-07 15:22:16,759 INFO org.springframework.core.log.LogAccessor [main] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-02-07 15:22:16,760 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.errorChannel' has 1 subscriber(s).
+2021-02-07 15:22:16,760 INFO org.springframework.core.log.LogAccessor [main] started bean '_org.springframework.integration.errorLogger'
+2021-02-07 15:22:16,761 INFO org.springframework.core.log.LogAccessor [main] Adding {file:outbound-channel-adapter:fileWriteConfig.fileWritingMessageHandler.serviceActivator} as a subscriber to the 'fileChannel' channel
+2021-02-07 15:22:16,761 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.fileChannel' has 1 subscriber(s).
+2021-02-07 15:22:16,761 INFO org.springframework.core.log.LogAccessor [main] started bean 'fileWriteConfig.fileWritingMessageHandler.serviceActivator'
+2021-02-07 15:22:16,766 INFO org.springframework.core.log.LogAccessor [main] started bean 'fileWriteConfig.fileReadingMessageSource.inboundChannelAdapter'
+2021-02-07 15:22:16,767 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9000"]
+2021-02-07 15:22:16,799 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 9000 (http) with context path ''
+2021-02-07 15:22:16,918 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9001 (http)
+2021-02-07 15:22:16,918 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-127.0.0.1-9001"]
+2021-02-07 15:22:16,918 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-02-07 15:22:16,918 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-07 15:22:16,964 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-02-07 15:22:16,964 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 158 ms
+2021-02-07 15:22:16,996 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-02-07 15:22:17,058 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-127.0.0.1-9001"]
+2021-02-07 15:22:17,058 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 9001 (http) with context path ''
+2021-02-07 15:22:17,089 INFO org.springframework.boot.StartupInfoLogger [main] Started CheckStyleFindBugsApplication in 4.53 seconds (JVM running for 5.28)
+2021-02-07 15:22:46,475 INFO org.apache.juli.logging.DirectJDKLog [http-nio-127.0.0.1-9001-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-07 15:22:46,477 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-127.0.0.1-9001-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-02-07 15:22:46,478 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-127.0.0.1-9001-exec-1] Completed initialization in 0 ms
+2021-02-07 15:23:02,145 INFO org.springframework.boot.StartupInfoLogger [main] Starting CheckStyleFindBugsApplication using Java 11.0.9.1 on DESKTOP-3D44SE3 with PID 10500 (E:\workspace_spring_maven\springIntegration_filewatch\target\classes started by Z420 in E:\workspace_spring_maven\springIntegration_filewatch)
+2021-02-07 15:23:02,151 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-02-07 15:23:03,277 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2021-02-07 15:23:03,277 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2021-02-07 15:23:03,277 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2021-02-07 15:23:03,464 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 15:23:03,464 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 15:23:03,496 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 15:23:03,918 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9000 (http)
+2021-02-07 15:23:03,933 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9000"]
+2021-02-07 15:23:03,933 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-02-07 15:23:03,933 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-07 15:23:04,043 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-02-07 15:23:04,043 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1823 ms
+2021-02-07 15:23:04,339 INFO com.example.demo.services.FileWriteConfig [main] adaptor setup
+2021-02-07 15:23:04,371 INFO com.example.demo.services.FileWriteConfig [main] Complete write to dest-dir: C:/tmp/dest
+2021-02-07 15:23:04,371 INFO com.example.demo.services.FileWriteConfig [main] delete file from source_dir: C:/tmp/source
+2021-02-07 15:23:04,746 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-07 15:23:05,339 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2021-02-07 15:23:05,417 INFO org.springframework.core.log.LogAccessor [main] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-02-07 15:23:05,417 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.errorChannel' has 1 subscriber(s).
+2021-02-07 15:23:05,417 INFO org.springframework.core.log.LogAccessor [main] started bean '_org.springframework.integration.errorLogger'
+2021-02-07 15:23:05,417 INFO org.springframework.core.log.LogAccessor [main] Adding {file:outbound-channel-adapter:fileWriteConfig.fileWritingMessageHandler.serviceActivator} as a subscriber to the 'fileChannel' channel
+2021-02-07 15:23:05,417 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.fileChannel' has 1 subscriber(s).
+2021-02-07 15:23:05,417 INFO org.springframework.core.log.LogAccessor [main] started bean 'fileWriteConfig.fileWritingMessageHandler.serviceActivator'
+2021-02-07 15:23:05,433 INFO org.springframework.core.log.LogAccessor [main] started bean 'fileWriteConfig.fileReadingMessageSource.inboundChannelAdapter'
+2021-02-07 15:23:05,433 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9000"]
+2021-02-07 15:23:05,464 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 9000 (http) with context path ''
+2021-02-07 15:23:05,574 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9001 (http)
+2021-02-07 15:23:05,574 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9001"]
+2021-02-07 15:23:05,574 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-02-07 15:23:05,574 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-07 15:23:05,621 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-02-07 15:23:05,621 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 157 ms
+2021-02-07 15:23:05,652 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-02-07 15:23:05,699 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9001"]
+2021-02-07 15:23:05,699 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 9001 (http) with context path ''
+2021-02-07 15:23:05,730 INFO org.springframework.boot.StartupInfoLogger [main] Started CheckStyleFindBugsApplication in 4.333 seconds (JVM running for 5.055)
+2021-02-07 15:23:18,511 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9001-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-07 15:23:18,511 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9001-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-02-07 15:23:18,511 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9001-exec-1] Completed initialization in 0 ms
+2021-02-07 15:33:40,170 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-5] No mapping for GET /actuator/metrics
+2021-02-07 15:36:30,032 INFO org.springframework.boot.StartupInfoLogger [main] Starting CheckStyleFindBugsApplication using Java 11.0.9.1 on DESKTOP-3D44SE3 with PID 7264 (E:\workspace_spring_maven\springIntegration_filewatch\target\classes started by Z420 in E:\workspace_spring_maven\springIntegration_filewatch)
+2021-02-07 15:36:30,032 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-02-07 15:36:31,220 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2021-02-07 15:36:31,236 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2021-02-07 15:36:31,236 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2021-02-07 15:36:31,423 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 15:36:31,439 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 15:36:31,470 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 15:36:31,970 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9000 (http)
+2021-02-07 15:36:31,986 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9000"]
+2021-02-07 15:36:31,986 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-02-07 15:36:31,986 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-07 15:36:32,126 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-02-07 15:36:32,126 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2032 ms
+2021-02-07 15:36:32,505 INFO com.example.demo.services.FileWriteConfig [main] adaptor setup
+2021-02-07 15:36:32,539 INFO com.example.demo.services.FileWriteConfig [main] Complete write to dest-dir: C:/tmp/dest
+2021-02-07 15:36:32,540 INFO com.example.demo.services.FileWriteConfig [main] delete file from source_dir: C:/tmp/source
+2021-02-07 15:36:32,909 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-07 15:36:33,581 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2021-02-07 15:36:33,674 INFO org.springframework.core.log.LogAccessor [main] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-02-07 15:36:33,674 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.errorChannel' has 1 subscriber(s).
+2021-02-07 15:36:33,674 INFO org.springframework.core.log.LogAccessor [main] started bean '_org.springframework.integration.errorLogger'
+2021-02-07 15:36:33,674 INFO org.springframework.core.log.LogAccessor [main] Adding {file:outbound-channel-adapter:fileWriteConfig.fileWritingMessageHandler.serviceActivator} as a subscriber to the 'fileChannel' channel
+2021-02-07 15:36:33,674 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.fileChannel' has 1 subscriber(s).
+2021-02-07 15:36:33,674 INFO org.springframework.core.log.LogAccessor [main] started bean 'fileWriteConfig.fileWritingMessageHandler.serviceActivator'
+2021-02-07 15:36:33,674 INFO org.springframework.core.log.LogAccessor [main] started bean 'fileWriteConfig.fileReadingMessageSource.inboundChannelAdapter'
+2021-02-07 15:36:33,674 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9000"]
+2021-02-07 15:36:33,706 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 9000 (http) with context path ''
+2021-02-07 15:36:33,831 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9001 (http)
+2021-02-07 15:36:33,831 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9001"]
+2021-02-07 15:36:33,831 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-02-07 15:36:33,831 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-07 15:36:33,878 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-02-07 15:36:33,878 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 157 ms
+2021-02-07 15:36:33,909 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 13 endpoint(s) beneath base path '/actuator'
+2021-02-07 15:36:33,956 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9001"]
+2021-02-07 15:36:33,956 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 9001 (http) with context path ''
+2021-02-07 15:36:34,018 INFO org.springframework.boot.StartupInfoLogger [main] Started CheckStyleFindBugsApplication in 4.715 seconds (JVM running for 5.462)
+2021-02-07 15:36:47,311 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9001-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-07 15:36:47,311 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9001-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-02-07 15:36:47,311 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9001-exec-1] Completed initialization in 0 ms
+2021-02-07 22:32:48,210 INFO org.springframework.boot.StartupInfoLogger [main] Starting CheckStyleFindBugsApplicationTests using Java 11.0.9.1 on DESKTOP-3D44SE3 with PID 1784 (started by Z420 in E:\workspace_spring_maven\springIntegration_filewatch)
+2021-02-07 22:32:48,214 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-02-07 22:32:49,479 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2021-02-07 22:32:49,489 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2021-02-07 22:32:49,495 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2021-02-07 22:32:49,790 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 22:32:49,802 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 22:32:49,847 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 22:32:50,485 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 0 (http)
+2021-02-07 22:32:50,505 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-auto-1"]
+2021-02-07 22:32:50,506 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-02-07 22:32:50,506 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-07 22:32:50,683 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-02-07 22:32:50,684 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2440 ms
+2021-02-07 22:32:51,284 INFO com.example.demo.services.FileWriteConfig [main] adaptor setup
+2021-02-07 22:32:51,344 INFO com.example.demo.services.FileWriteConfig [main] Complete write to dest-dir: C:/tmp/dest
+2021-02-07 22:32:51,345 INFO com.example.demo.services.FileWriteConfig [main] delete file from source_dir: C:/tmp/source
+2021-02-07 22:32:51,920 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-07 22:32:53,118 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2021-02-07 22:32:53,245 INFO org.springframework.core.log.LogAccessor [main] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-02-07 22:32:53,246 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.errorChannel' has 1 subscriber(s).
+2021-02-07 22:32:53,246 INFO org.springframework.core.log.LogAccessor [main] started bean '_org.springframework.integration.errorLogger'
+2021-02-07 22:32:53,247 INFO org.springframework.core.log.LogAccessor [main] Adding {file:outbound-channel-adapter:fileWriteConfig.fileWritingMessageHandler.serviceActivator} as a subscriber to the 'fileChannel' channel
+2021-02-07 22:32:53,247 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.fileChannel' has 1 subscriber(s).
+2021-02-07 22:32:53,248 INFO org.springframework.core.log.LogAccessor [main] started bean 'fileWriteConfig.fileWritingMessageHandler.serviceActivator'
+2021-02-07 22:32:53,252 INFO org.springframework.core.log.LogAccessor [main] started bean 'fileWriteConfig.fileReadingMessageSource.inboundChannelAdapter'
+2021-02-07 22:32:53,253 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-auto-1"]
+2021-02-07 22:32:53,286 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 63779 (http) with context path ''
+2021-02-07 22:32:53,405 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 0 (http)
+2021-02-07 22:32:53,407 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-auto-2"]
+2021-02-07 22:32:53,408 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-02-07 22:32:53,409 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-07 22:32:53,465 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-02-07 22:32:53,466 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 173 ms
+2021-02-07 22:32:53,487 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 13 endpoint(s) beneath base path '/actuator'
+2021-02-07 22:32:53,548 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-auto-2"]
+2021-02-07 22:32:53,554 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 63784 (http) with context path ''
+2021-02-07 22:32:53,593 INFO org.springframework.boot.StartupInfoLogger [main] Started CheckStyleFindBugsApplicationTests in 6.016 seconds (JVM running for 7.663)
+2021-02-07 22:32:54,306 INFO org.apache.juli.logging.DirectJDKLog [http-nio-auto-2-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-07 22:32:54,307 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-auto-2-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-02-07 22:32:54,308 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-auto-2-exec-1] Completed initialization in 1 ms
+2021-02-07 22:32:54,565 INFO org.apache.juli.logging.DirectJDKLog [http-nio-auto-1-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-07 22:32:54,565 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-auto-1-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-02-07 22:32:54,566 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-auto-1-exec-1] Completed initialization in 1 ms
+2021-02-07 22:32:54,816 INFO org.springframework.core.log.LogAccessor [SpringContextShutdownHook] stopped bean 'fileWriteConfig.fileReadingMessageSource.inboundChannelAdapter'
+2021-02-07 22:32:54,817 INFO org.springframework.core.log.LogAccessor [SpringContextShutdownHook] Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-02-07 22:32:54,817 INFO org.springframework.core.log.LogAccessor [SpringContextShutdownHook] Channel 'application.errorChannel' has 0 subscriber(s).
+2021-02-07 22:32:54,818 INFO org.springframework.core.log.LogAccessor [SpringContextShutdownHook] stopped bean '_org.springframework.integration.errorLogger'
+2021-02-07 22:32:54,818 INFO org.springframework.core.log.LogAccessor [SpringContextShutdownHook] Removing {file:outbound-channel-adapter:fileWriteConfig.fileWritingMessageHandler.serviceActivator} as a subscriber to the 'fileChannel' channel
+2021-02-07 22:32:54,818 INFO org.springframework.core.log.LogAccessor [SpringContextShutdownHook] Channel 'application.fileChannel' has 0 subscriber(s).
+2021-02-07 22:32:54,819 INFO org.springframework.core.log.LogAccessor [SpringContextShutdownHook] stopped bean 'fileWriteConfig.fileWritingMessageHandler.serviceActivator'
+2021-02-07 22:32:54,821 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'taskScheduler'
+2021-02-07 22:32:54,825 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-07 22:55:55,569 INFO org.springframework.boot.StartupInfoLogger [main] Starting DemoReadFileContentApplication using Java 11.0.9.1 on DESKTOP-3D44SE3 with PID 12572 (E:\workspace_spring_maven\springIntegration_file_content\target\classes started by Z420 in E:\workspace_spring_maven\springIntegration_file_content)
+2021-02-07 22:55:55,575 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-02-07 22:55:55,906 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2021-02-07 22:55:55,916 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2021-02-07 22:55:55,924 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2021-02-07 22:55:56,028 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 22:55:56,033 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 22:55:56,060 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+2021-02-07 22:55:56,092 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:582)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at com.example.demo.DemoReadFileContentApplication.main(DemoReadFileContentApplication.java:14)
+Caused by: org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:209)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:159)
+	... 9 common frames omitted
+2021-02-07 23:02:27,809 INFO org.springframework.boot.StartupInfoLogger [main] Starting DemoReadFileContentApplication using Java 11.0.9.1 on DESKTOP-3D44SE3 with PID 632 (E:\workspace_spring_maven\springIntegration_file_content\target\classes started by Z420 in E:\workspace_spring_maven\springIntegration_file_content)
+2021-02-07 23:02:27,813 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-02-07 23:02:28,143 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2021-02-07 23:02:28,152 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2021-02-07 23:02:28,159 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2021-02-07 23:02:28,261 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 23:02:28,267 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 23:02:28,294 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+2021-02-07 23:02:28,327 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:582)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at com.example.demo.DemoReadFileContentApplication.main(DemoReadFileContentApplication.java:16)
+Caused by: org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:209)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:159)
+	... 9 common frames omitted
+2021-02-07 23:04:17,009 INFO org.springframework.boot.StartupInfoLogger [main] Starting DemoReadFileContentApplication using Java 11.0.9.1 on DESKTOP-3D44SE3 with PID 13264 (E:\workspace_spring_maven\springIntegration_file_content\target\classes started by Z420 in E:\workspace_spring_maven\springIntegration_file_content)
+2021-02-07 23:04:17,014 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-02-07 23:04:17,325 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2021-02-07 23:04:17,334 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2021-02-07 23:04:17,344 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2021-02-07 23:04:17,445 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 23:04:17,451 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 23:04:17,476 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+2021-02-07 23:04:17,507 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:582)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at com.example.demo.DemoReadFileContentApplication.main(DemoReadFileContentApplication.java:17)
+Caused by: org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:209)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:159)
+	... 9 common frames omitted
+2021-02-07 23:06:50,501 INFO org.springframework.boot.StartupInfoLogger [main] Starting DemoReadFileContentApplication using Java 11.0.9.1 on DESKTOP-3D44SE3 with PID 8968 (E:\workspace_spring_maven\springIntegration_file_content\target\classes started by Z420 in E:\workspace_spring_maven\springIntegration_file_content)
+2021-02-07 23:06:50,506 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-02-07 23:06:50,817 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2021-02-07 23:06:50,826 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2021-02-07 23:06:50,834 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2021-02-07 23:06:50,938 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 23:06:50,945 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 23:06:50,974 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+2021-02-07 23:06:51,004 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:582)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at com.example.demo.DemoReadFileContentApplication.main(DemoReadFileContentApplication.java:16)
+Caused by: org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:209)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:159)
+	... 9 common frames omitted
+2021-02-07 23:07:41,441 INFO org.springframework.boot.StartupInfoLogger [main] Starting DemoReadFileContentApplication using Java 11.0.9.1 on DESKTOP-3D44SE3 with PID 12464 (E:\workspace_spring_maven\springIntegration_file_content\target\classes started by Z420 in E:\workspace_spring_maven\springIntegration_file_content)
+2021-02-07 23:07:41,446 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-02-07 23:07:41,756 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2021-02-07 23:07:41,764 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2021-02-07 23:07:41,771 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2021-02-07 23:07:41,875 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 23:07:41,880 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 23:07:41,907 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+2021-02-07 23:07:41,939 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:582)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at com.example.demo.DemoReadFileContentApplication.main(DemoReadFileContentApplication.java:15)
+Caused by: org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:209)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:159)
+	... 9 common frames omitted
+2021-02-07 23:10:17,248 INFO org.springframework.boot.StartupInfoLogger [main] Starting DemoReadFileContentApplication using Java 11.0.9.1 on DESKTOP-3D44SE3 with PID 12596 (E:\workspace_spring_maven\springIntegration_file_content\target\classes started by Z420 in E:\workspace_spring_maven\springIntegration_file_content)
+2021-02-07 23:10:17,252 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-02-07 23:10:17,567 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2021-02-07 23:10:17,576 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2021-02-07 23:10:17,582 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2021-02-07 23:10:17,687 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 23:10:17,692 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 23:10:17,718 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+2021-02-07 23:10:17,750 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:582)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at com.example.demo.DemoReadFileContentApplication.main(DemoReadFileContentApplication.java:19)
+Caused by: org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:209)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:159)
+	... 9 common frames omitted
+2021-02-07 23:11:03,090 INFO org.springframework.boot.StartupInfoLogger [main] Starting DemoReadFileContentApplication using Java 11.0.9.1 on DESKTOP-3D44SE3 with PID 6204 (E:\workspace_spring_maven\springIntegration_file_content\target\classes started by Z420 in E:\workspace_spring_maven\springIntegration_file_content)
+2021-02-07 23:11:03,094 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-02-07 23:11:03,839 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'fileProcessor' defined in class path resource [com/example/demo/services/FileWriteConfig.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=fileWriteConfig; factoryMethodName=fileProcessor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/example/demo/services/FileWriteConfig.class]] for bean 'fileProcessor': There is already [Generic bean: class [com.example.demo.services.FileProcessor]; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\workspace_spring_maven\springIntegration_file_content\target\classes\com\example\demo\services\FileProcessor.class]] bound.
+2021-02-07 23:11:03,854 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-02-07 23:11:03,876 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'fileProcessor', defined in class path resource [com/example/demo/services/FileWriteConfig.class], could not be registered. A bean with that name has already been defined in file [E:\workspace_spring_maven\springIntegration_file_content\target\classes\com\example\demo\services\FileProcessor.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2021-02-07 23:16:40,063 INFO org.springframework.boot.StartupInfoLogger [main] Starting DemoReadFileContentApplication using Java 11.0.9.1 on DESKTOP-3D44SE3 with PID 8092 (E:\workspace_spring_maven\springIntegration_file_content\target\classes started by Z420 in E:\workspace_spring_maven\springIntegration_file_content)
+2021-02-07 23:16:40,069 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-02-07 23:16:41,347 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2021-02-07 23:16:41,355 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2021-02-07 23:16:41,359 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2021-02-07 23:16:41,549 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 23:16:41,555 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 23:16:41,578 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 23:16:42,016 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9000 (http)
+2021-02-07 23:16:42,030 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9000"]
+2021-02-07 23:16:42,031 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-02-07 23:16:42,032 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-07 23:16:42,146 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-02-07 23:16:42,146 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2004 ms
+2021-02-07 23:16:42,549 INFO com.example.demo.services.FileWriteConfig [main] adaptor setup
+2021-02-07 23:16:42,978 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-07 23:16:43,675 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2021-02-07 23:16:43,764 INFO org.springframework.core.log.LogAccessor [main] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-02-07 23:16:43,765 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.errorChannel' has 1 subscriber(s).
+2021-02-07 23:16:43,766 INFO org.springframework.core.log.LogAccessor [main] started bean '_org.springframework.integration.errorLogger'
+2021-02-07 23:16:43,766 INFO org.springframework.core.log.LogAccessor [main] Adding {transformer} as a subscriber to the 'fileInputChannel' channel
+2021-02-07 23:16:43,766 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.fileInputChannel' has 1 subscriber(s).
+2021-02-07 23:16:43,767 INFO org.springframework.core.log.LogAccessor [main] started bean 'processFileFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#0'; defined in: 'class path resource [com/example/demo/services/FileWriteConfig.class]'; from source: 'bean method processFileFlow'
+2021-02-07 23:16:43,767 INFO org.springframework.core.log.LogAccessor [main] Adding {service-activator} as a subscriber to the 'processFileFlow.channel#0' channel
+2021-02-07 23:16:43,767 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.processFileFlow.channel#0' has 1 subscriber(s).
+2021-02-07 23:16:43,768 INFO org.springframework.core.log.LogAccessor [main] started bean 'processFileFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#1'; defined in: 'class path resource [com/example/demo/services/FileWriteConfig.class]'; from source: 'bean method processFileFlow'
+2021-02-07 23:16:43,773 INFO org.springframework.core.log.LogAccessor [main] started bean 'fileWriteConfig.fileReadingMessageSource.inboundChannelAdapter'
+2021-02-07 23:16:43,774 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9000"]
+2021-02-07 23:16:43,809 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 9000 (http) with context path ''
+2021-02-07 23:16:43,942 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9001 (http)
+2021-02-07 23:16:43,943 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9001"]
+2021-02-07 23:16:43,944 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-02-07 23:16:43,944 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-07 23:16:43,983 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-02-07 23:16:43,984 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 169 ms
+2021-02-07 23:16:44,009 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 13 endpoint(s) beneath base path '/actuator'
+2021-02-07 23:16:44,109 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9001"]
+2021-02-07 23:16:44,114 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 9001 (http) with context path ''
+2021-02-07 23:16:44,160 INFO org.springframework.boot.StartupInfoLogger [main] Started DemoReadFileContentApplication in 4.854 seconds (JVM running for 5.616)
+2021-02-07 23:18:36,875 INFO org.springframework.integration.handler.support.MessagingMethodInvokerHelper [task-scheduler-10] Overriding default instance of MessageHandlerMethodFactory with provided one.
+2021-02-07 23:23:07,010 INFO org.springframework.boot.StartupInfoLogger [main] Starting DemoReadFileContentApplication using Java 11.0.9.1 on DESKTOP-3D44SE3 with PID 9968 (E:\workspace_spring_maven\springIntegration_file_content\target\classes started by Z420 in E:\workspace_spring_maven\springIntegration_file_content)
+2021-02-07 23:23:07,015 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-02-07 23:23:08,258 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2021-02-07 23:23:08,265 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2021-02-07 23:23:08,269 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2021-02-07 23:23:08,475 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 23:23:08,481 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 23:23:08,505 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 23:23:08,962 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9000 (http)
+2021-02-07 23:23:08,978 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9000"]
+2021-02-07 23:23:08,979 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-02-07 23:23:08,979 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-07 23:23:09,097 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-02-07 23:23:09,097 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2012 ms
+2021-02-07 23:23:09,447 INFO com.example.demo.services.FileWriteConfig [main] Complete write to dest-dir: C:/tmp/dest
+2021-02-07 23:23:09,448 INFO com.example.demo.services.FileWriteConfig [main] delete file from source_dir: C:/tmp/source
+2021-02-07 23:23:09,522 INFO com.example.demo.services.FileWriteConfig [main] adaptor setup
+2021-02-07 23:23:09,921 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-07 23:23:10,589 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2021-02-07 23:23:10,678 INFO org.springframework.core.log.LogAccessor [main] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-02-07 23:23:10,679 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.errorChannel' has 1 subscriber(s).
+2021-02-07 23:23:10,679 INFO org.springframework.core.log.LogAccessor [main] started bean '_org.springframework.integration.errorLogger'
+2021-02-07 23:23:10,680 INFO org.springframework.core.log.LogAccessor [main] Adding {transformer} as a subscriber to the 'fileInputChannel' channel
+2021-02-07 23:23:10,680 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.fileInputChannel' has 1 subscriber(s).
+2021-02-07 23:23:10,680 INFO org.springframework.core.log.LogAccessor [main] started bean 'processFileFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#0'; defined in: 'class path resource [com/example/demo/services/FileWriteConfig.class]'; from source: 'bean method processFileFlow'
+2021-02-07 23:23:10,681 INFO org.springframework.core.log.LogAccessor [main] Adding {service-activator} as a subscriber to the 'processFileFlow.channel#0' channel
+2021-02-07 23:23:10,681 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.processFileFlow.channel#0' has 1 subscriber(s).
+2021-02-07 23:23:10,681 INFO org.springframework.core.log.LogAccessor [main] started bean 'processFileFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#1'; defined in: 'class path resource [com/example/demo/services/FileWriteConfig.class]'; from source: 'bean method processFileFlow'
+2021-02-07 23:23:10,681 INFO org.springframework.core.log.LogAccessor [main] Adding {file:outbound-channel-adapter} as a subscriber to the 'processFileFlow.channel#1' channel
+2021-02-07 23:23:10,682 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.processFileFlow.channel#1' has 1 subscriber(s).
+2021-02-07 23:23:10,682 INFO org.springframework.core.log.LogAccessor [main] started bean 'processFileFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#2'; defined in: 'class path resource [com/example/demo/services/FileWriteConfig.class]'; from source: 'bean method processFileFlow'
+2021-02-07 23:23:10,682 INFO org.springframework.core.log.LogAccessor [main] Adding {file:outbound-channel-adapter:fileWriteConfig.fileWritingMessageHandler.serviceActivator} as a subscriber to the 'fileChannel' channel
+2021-02-07 23:23:10,683 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.fileChannel' has 1 subscriber(s).
+2021-02-07 23:23:10,683 INFO org.springframework.core.log.LogAccessor [main] started bean 'fileWriteConfig.fileWritingMessageHandler.serviceActivator'
+2021-02-07 23:23:10,688 INFO org.springframework.core.log.LogAccessor [main] started bean 'fileWriteConfig.fileReadingMessageSource.inboundChannelAdapter'
+2021-02-07 23:23:10,689 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9000"]
+2021-02-07 23:23:10,715 INFO org.springframework.integration.handler.support.MessagingMethodInvokerHelper [task-scheduler-1] Overriding default instance of MessageHandlerMethodFactory with provided one.
+2021-02-07 23:23:10,723 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 9000 (http) with context path ''
+2021-02-07 23:23:10,858 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9001 (http)
+2021-02-07 23:23:10,860 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9001"]
+2021-02-07 23:23:10,860 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-02-07 23:23:10,861 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-07 23:23:10,899 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-02-07 23:23:10,900 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 171 ms
+2021-02-07 23:23:10,928 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 13 endpoint(s) beneath base path '/actuator'
+2021-02-07 23:23:10,996 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9001"]
+2021-02-07 23:23:11,001 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 9001 (http) with context path ''
+2021-02-07 23:23:11,069 INFO org.springframework.boot.StartupInfoLogger [main] Started DemoReadFileContentApplication in 4.809 seconds (JVM running for 5.455)
+2021-02-07 23:29:49,876 INFO org.springframework.boot.StartupInfoLogger [main] Starting DemoReadFileContentApplication using Java 11.0.9.1 on DESKTOP-3D44SE3 with PID 12344 (E:\workspace_spring_maven\springIntegration_file_content\target\classes started by Z420 in E:\workspace_spring_maven\springIntegration_file_content)
+2021-02-07 23:29:49,880 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-02-07 23:29:51,141 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2021-02-07 23:29:51,148 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2021-02-07 23:29:51,152 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2021-02-07 23:29:51,348 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 23:29:51,354 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 23:29:51,383 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 23:29:51,838 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9000 (http)
+2021-02-07 23:29:51,853 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9000"]
+2021-02-07 23:29:51,854 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-02-07 23:29:51,854 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-07 23:29:51,971 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-02-07 23:29:51,972 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2028 ms
+2021-02-07 23:29:52,330 INFO com.example.demo.services.FileWriteConfig [main] Complete write to dest-dir: C:/tmp/dest
+2021-02-07 23:29:52,332 INFO com.example.demo.services.FileWriteConfig [main] delete file from source_dir: C:/tmp/source
+2021-02-07 23:29:52,398 INFO com.example.demo.services.FileWriteConfig [main] adaptor setup
+2021-02-07 23:29:52,787 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-07 23:29:53,455 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2021-02-07 23:29:53,543 INFO org.springframework.core.log.LogAccessor [main] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-02-07 23:29:53,544 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.errorChannel' has 1 subscriber(s).
+2021-02-07 23:29:53,544 INFO org.springframework.core.log.LogAccessor [main] started bean '_org.springframework.integration.errorLogger'
+2021-02-07 23:29:53,544 INFO org.springframework.core.log.LogAccessor [main] Adding {transformer} as a subscriber to the 'fileInputChannel' channel
+2021-02-07 23:29:53,545 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.fileInputChannel' has 1 subscriber(s).
+2021-02-07 23:29:53,545 INFO org.springframework.core.log.LogAccessor [main] started bean 'processFileFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#0'; defined in: 'class path resource [com/example/demo/services/FileWriteConfig.class]'; from source: 'bean method processFileFlow'
+2021-02-07 23:29:53,545 INFO org.springframework.core.log.LogAccessor [main] Adding {service-activator} as a subscriber to the 'processFileFlow.channel#0' channel
+2021-02-07 23:29:53,545 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.processFileFlow.channel#0' has 1 subscriber(s).
+2021-02-07 23:29:53,545 INFO org.springframework.core.log.LogAccessor [main] started bean 'processFileFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#1'; defined in: 'class path resource [com/example/demo/services/FileWriteConfig.class]'; from source: 'bean method processFileFlow'
+2021-02-07 23:29:53,546 INFO org.springframework.core.log.LogAccessor [main] Adding {file:outbound-channel-adapter} as a subscriber to the 'processFileFlow.channel#1' channel
+2021-02-07 23:29:53,546 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.processFileFlow.channel#1' has 1 subscriber(s).
+2021-02-07 23:29:53,546 INFO org.springframework.core.log.LogAccessor [main] started bean 'processFileFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#2'; defined in: 'class path resource [com/example/demo/services/FileWriteConfig.class]'; from source: 'bean method processFileFlow'
+2021-02-07 23:29:53,546 INFO org.springframework.core.log.LogAccessor [main] Adding {file:outbound-channel-adapter:fileWriteConfig.fileWritingMessageHandler.serviceActivator} as a subscriber to the 'fileChannel' channel
+2021-02-07 23:29:53,546 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.fileChannel' has 1 subscriber(s).
+2021-02-07 23:29:53,547 INFO org.springframework.core.log.LogAccessor [main] started bean 'fileWriteConfig.fileWritingMessageHandler.serviceActivator'
+2021-02-07 23:29:53,550 INFO org.springframework.core.log.LogAccessor [main] started bean 'fileWriteConfig.fileReadingMessageSource.inboundChannelAdapter'
+2021-02-07 23:29:53,551 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9000"]
+2021-02-07 23:29:53,571 INFO org.springframework.integration.handler.support.MessagingMethodInvokerHelper [task-scheduler-1] Overriding default instance of MessageHandlerMethodFactory with provided one.
+2021-02-07 23:29:53,581 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 9000 (http) with context path ''
+2021-02-07 23:29:53,701 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9001 (http)
+2021-02-07 23:29:53,702 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9001"]
+2021-02-07 23:29:53,703 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-02-07 23:29:53,703 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-07 23:29:53,742 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-02-07 23:29:53,742 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 155 ms
+2021-02-07 23:29:53,773 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 13 endpoint(s) beneath base path '/actuator'
+2021-02-07 23:29:53,866 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9001"]
+2021-02-07 23:29:53,882 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 9001 (http) with context path ''
+2021-02-07 23:29:53,931 INFO org.springframework.boot.StartupInfoLogger [main] Started DemoReadFileContentApplication in 4.852 seconds (JVM running for 5.521)
+2021-02-07 23:35:30,980 INFO org.springframework.boot.StartupInfoLogger [main] Starting DemoReadFileContentApplication using Java 11.0.9.1 on DESKTOP-3D44SE3 with PID 7332 (E:\workspace_spring_maven\springIntegration_file_content\target\classes started by Z420 in E:\workspace_spring_maven\springIntegration_file_content)
+2021-02-07 23:35:30,986 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-02-07 23:35:32,215 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2021-02-07 23:35:32,223 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2021-02-07 23:35:32,227 INFO org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2021-02-07 23:35:32,441 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 23:35:32,447 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 23:35:32,469 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 23:35:32,923 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9000 (http)
+2021-02-07 23:35:32,938 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9000"]
+2021-02-07 23:35:32,939 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-02-07 23:35:32,940 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-07 23:35:33,058 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-02-07 23:35:33,059 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2006 ms
+2021-02-07 23:35:33,413 INFO com.example.demo.services.FileWriteConfig [main] Complete write to dest-dir: C:/tmp/dest
+2021-02-07 23:35:33,414 INFO com.example.demo.services.FileWriteConfig [main] delete file from source_dir: C:/tmp/source
+2021-02-07 23:35:33,478 INFO com.example.demo.services.FileWriteConfig [main] adaptor setup
+2021-02-07 23:35:33,861 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-07 23:35:34,473 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2021-02-07 23:35:34,552 INFO org.springframework.core.log.LogAccessor [main] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-02-07 23:35:34,553 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.errorChannel' has 1 subscriber(s).
+2021-02-07 23:35:34,553 INFO org.springframework.core.log.LogAccessor [main] started bean '_org.springframework.integration.errorLogger'
+2021-02-07 23:35:34,553 INFO org.springframework.core.log.LogAccessor [main] Adding {transformer} as a subscriber to the 'fileInputChannel' channel
+2021-02-07 23:35:34,553 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.fileInputChannel' has 1 subscriber(s).
+2021-02-07 23:35:34,553 INFO org.springframework.core.log.LogAccessor [main] started bean 'processFileFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#0'; defined in: 'class path resource [com/example/demo/services/FileWriteConfig.class]'; from source: 'bean method processFileFlow'
+2021-02-07 23:35:34,554 INFO org.springframework.core.log.LogAccessor [main] Adding {service-activator} as a subscriber to the 'processFileFlow.channel#0' channel
+2021-02-07 23:35:34,554 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.processFileFlow.channel#0' has 1 subscriber(s).
+2021-02-07 23:35:34,554 INFO org.springframework.core.log.LogAccessor [main] started bean 'processFileFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#1'; defined in: 'class path resource [com/example/demo/services/FileWriteConfig.class]'; from source: 'bean method processFileFlow'
+2021-02-07 23:35:34,554 INFO org.springframework.core.log.LogAccessor [main] Adding {file:outbound-channel-adapter} as a subscriber to the 'processFileFlow.channel#1' channel
+2021-02-07 23:35:34,554 INFO org.springframework.core.log.LogAccessor [main] Channel 'application.processFileFlow.channel#1' has 1 subscriber(s).
+2021-02-07 23:35:34,554 INFO org.springframework.core.log.LogAccessor [main] started bean 'processFileFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#2'; defined in: 'class path resource [com/example/demo/services/FileWriteConfig.class]'; from source: 'bean method processFileFlow'
+2021-02-07 23:35:34,559 INFO org.springframework.core.log.LogAccessor [main] started bean 'fileWriteConfig.fileReadingMessageSource.inboundChannelAdapter'
+2021-02-07 23:35:34,560 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9000"]
+2021-02-07 23:35:34,584 INFO org.springframework.integration.handler.support.MessagingMethodInvokerHelper [task-scheduler-1] Overriding default instance of MessageHandlerMethodFactory with provided one.
+2021-02-07 23:35:34,593 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 9000 (http) with context path ''
+2021-02-07 23:35:34,727 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9001 (http)
+2021-02-07 23:35:34,729 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9001"]
+2021-02-07 23:35:34,729 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-02-07 23:35:34,729 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-07 23:35:34,767 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-02-07 23:35:34,767 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 166 ms
+2021-02-07 23:35:34,795 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 13 endpoint(s) beneath base path '/actuator'
+2021-02-07 23:35:34,856 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9001"]
+2021-02-07 23:35:34,862 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 9001 (http) with context path ''
+2021-02-07 23:35:34,905 INFO org.springframework.boot.StartupInfoLogger [main] Started DemoReadFileContentApplication in 4.704 seconds (JVM running for 5.345)

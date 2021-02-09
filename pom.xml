@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.4.2</version>
+		<relativePath />
+	</parent>
+	<groupId>com.example</groupId>
+	<artifactId>CheckStyle_FindBugs</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>CheckStyle_FindBugs</name>
+	<description>Demo project for Spring Boot with plugin CheckStyle_FindBugs</description>
+
+    <repositories>
+        <repository>
+          <id>my-alternate-repository</id>
+          <url>https://mvnrepository.com</url>
+        </repository>
+    </repositories>
+  
+	<properties>
+	    <main.basedir>${project.basedir}</main.basedir>
+		<maven.tools.dir>${main.basedir}/tools/maven</maven.tools.dir>
+		<compiler.source.version>11</compiler.source.version>
+		<compiler.target.version>11</compiler.target.version>
+		<java.version>11</java.version>
+		<spotbugs.plugin.version>4.2.0</spotbugs.plugin.version>
+        <pmd.plugin.version>3.12.0</pmd.plugin.version>
+		<checkstyle.plugin.version>3.1.2</checkstyle.plugin.version>
+		<spotbugs.failOnError>true</spotbugs.failOnError>
+		<checkstyle.failOnViolation>true</checkstyle.failOnViolation>
+		<checkstyle.file.location>${maven.tools.dir}/checkstyle.xml</checkstyle.file.location>
+		<checkstyle.suppression.file.location>${maven.tools.dir}/checkstyle-suppressions.xml
+		</checkstyle.suppression.file.location>
+        <pmd.violation.buildfail>true</pmd.violation.buildfail>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-integration</artifactId>
+		</dependency>
+		<dependency>
+            <groupId>org.springframework.integration</groupId>
+            <artifactId>spring-integration-file</artifactId>
+        </dependency>
+		<!--  dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
+		</dependency -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+        </dependency>
+		<dependency>
+			<groupId>org.springframework.integration</groupId>
+			<artifactId>spring-integration-http</artifactId>
+		</dependency>
+		<!-- dependency>
+			<groupId>org.springframework.integration</groupId>
+			<artifactId>spring-integration-jdbc</artifactId>
+		</dependency -->
+		<dependency>
+			<groupId>org.springframework.integration</groupId>
+			<artifactId>spring-integration-kafka</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.kafka</groupId>
+			<artifactId>spring-kafka</artifactId>
+		</dependency>
+
+		<!-- dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
+		</dependency -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.integration</groupId>
+			<artifactId>spring-integration-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.kafka</groupId>
+			<artifactId>spring-kafka-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+			    <plugin>
+			        <groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>${maven-compiler-plugin.version}</version>
+					<configuration>
+						<fork>true</fork>
+						<debug>true</debug>
+						<meminitial>256m</meminitial>
+						<maxmem>2048m</maxmem>
+						<source>${compiler.target.version}</source>
+						<target>${compiler.source.version}</target>
+						<showWarnings>true</showWarnings>
+						<showDeprecation>true</showDeprecation>
+					</configuration>
+				</plugin>
+				<!-- SPOT BUGS (Static Code Analysis) Plugin -->
+				<plugin>
+					<groupId>com.github.spotbugs</groupId>
+					<artifactId>spotbugs-maven-plugin</artifactId>
+					<version>${spotbugs.plugin.version}</version>
+					<configuration>
+					    <xmlOutput>true</xmlOutput>
+					    <threshold>Low</threshold>
+					    <outputDirectory>${project.reporting.output}/spotbugs</outputDirectory>
+					    <excludeFilterFile>${maven.tools.dir}/spotbugs-exclude.xml</excludeFilterFile>
+					    <failOnError>true</failOnError>
+					</configuration>
+
+				</plugin>
+                <!-- Check Style Plugin -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-checkstyle-plugin</artifactId>
+					<version>${checkstyle.plugin.version}</version>
+					<executions>
+                        <execution>
+                            <id>validate</id>
+                            <phase>validate</phase>
+                            <configuration>
+                                <configLocation>${checkstyle.file.location}</configLocation>
+                                <suppressionsLocation>${checkstyle.suppression.file.location}</suppressionsLocation>
+                                <encoding>UTF-8</encoding>
+                                <consoleOutput>true</consoleOutput>
+                                <!-- BUILD FAIL ON CHECKSTYLE VIOLATION -->
+                                <failOnViolation>${checkstyle.failOnViolation}</failOnViolation>
+                                <includeTestSourceDirectory>true</includeTestSourceDirectory>
+                                <outputFile>${project.reporting.outputDirectory}/checkstyle</outputFile>
+                            </configuration>
+                            <goals>
+                                <goal>check</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                    <dependencies>
+                        <dependency>
+                            <groupId>com.puppycrawl.tools</groupId>
+                            <artifactId>checkstyle</artifactId>
+                            <version>8.30</version>
+                        </dependency>
+                    </dependencies>
+				</plugin>
+                <!-- PMD Plugin -->
+                <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-pmd-plugin</artifactId>
+                    <version>${pmd.plugin.version}</version>
+                    <configuration>
+                        <sourceEncoding>${project.build.sourceEncoding}</sourceEncoding>
+                        <targetJdk>${compiler.target.version}</targetJdk>
+                        <linkXRef>false</linkXRef>
+                        <excludes>
+                            <exclude>**/*Mixin.java</exclude>
+                        </excludes>
+                        <!-- BUILD FAIL ON PMD VIOLATION -->
+                        <failOnViolation>${pmd.violation.buildfail}</failOnViolation>
+                        <targetDirectory>${project.reporting.outputDirectory}/pmd</targetDirectory>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>pmd-check</id>
+                            <goals>
+                                <goal>check</goal>
+                            </goals>
+                            <configuration>
+                                <printFailingErrors>true</printFailingErrors>
+                                <excludeFromFailureFile>${maven.tools.dir}/pmd-exclude.properties
+                                </excludeFromFailureFile>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>cpd-check</id>
+                            <goals>
+                                <goal>cpd-check</goal>
+                            </goals>
+                            <configuration>
+                                <printFailingErrors>true</printFailingErrors>
+                                <excludeFromFailureFile>${maven.tools.dir}/cpd-exclude.properties
+                                </excludeFromFailureFile>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+			</plugins>
+
+		</pluginManagement>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>com.github.spotbugs</groupId>
+				<artifactId>spotbugs-maven-plugin</artifactId>
+			</plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-pmd-plugin</artifactId>
+            </plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-checkstyle-plugin</artifactId>
+			</plugin>
+		</plugins>
+
+	</build>
+
+</project>

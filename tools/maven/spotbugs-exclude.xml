@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Details for syntax can be found at: https://spotbugs.readthedocs.io/en/stable/filter.html
+ -->
+<FindBugsFilter xmlns="https://github.com/spotbugs/filter/3.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://github.com/spotbugs/filter/3.0.0
+        https://raw.githubusercontent.com/spotbugs/spotbugs/3.1.0/spotbugs/etc/findbugsfilter.xsd">
+
+
+    <!-- SKIP ALL TEST MODULES AS THEY ARE NOT DEPLOYED CODE AND ONLY FOR TESTING-->
+    <Match>
+        <Package name="~.*\.test\.*"/>
+    </Match>
+
+    <!-- FALSE POSITIVE AS STREAM IS INTENTIONALLY LEFT OPEN -->
+    <Match>
+        <Class name="com.att.zen.edge.netconf.client.util.NetconfClientUtils" />
+        <Bug pattern="OS_OPEN_STREAM" />
+    </Match>
+
+    <!-- KNOWN SERIALIZATION FALSE POSITIVES -->
+    <Match>
+        <Class name="com.att.zen.edge.netconf.client.domain.NetconfSession" />
+        <Bug pattern="SE_TRANSIENT_FIELD_NOT_RESTORED" />
+    </Match>
+
+    <Match>
+        <Class name="com.att.zen.edge.netconf.client.domain.NetconfMetric" />
+        <Bug pattern="SE_BAD_FIELD" />
+    </Match>
+
+    <!-- ALL GENERATED GNMI MODELS SHOULD BE SKIPPED FOR SPOT BUG ANALYSIS -->
+    <Match>
+        <Package name="~.*\.gnmi\.model\.*"/>
+    </Match>
+    <!-- ALL GENERATED MODELS SHOULD BE SKIPPED FOR SPOT BUG ANALYSIS -->
+    <Match>
+        <Package name="~.*\.model\.generated\.*"/>
+    </Match>
+
+
+    <!-- KNOWN CONDITION AS GNMI STUB IS NOT RESTORED AFTER SERIALIZATION / DESERIALIZATION -->
+    <Match>
+        <Class name="com.att.zen.edge.gnmi.client.domain.GnmiSubscriptionContext"/>
+        <Bug pattern="SE_TRANSIENT_FIELD_NOT_RESTORED"/>
+    </Match>
+
+</FindBugsFilter>
+
